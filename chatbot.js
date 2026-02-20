@@ -11,14 +11,6 @@
     const style = document.createElement("style");
     style.id = "orbitaBotpressStyles";
     style.textContent = `
-      #webchat .bpWebchat {
-        position: unset;
-        width: 100%;
-        height: 100%;
-        max-height: 100%;
-        max-width: 100%;
-      }
-
       .bpFab {
         display: block !important;
         right: 18px !important;
@@ -31,11 +23,7 @@
       .bpw-footer,
       .bpw-attribution,
       .bpw-attribution-link,
-      footer.bpw-footer,
-      #webchat .bpw-powered,
-      #webchat .bpw-powered-container,
-      #webchat .bpw-footer,
-      #webchat .bpw-attribution {
+      footer.bpw-footer {
         display: none !important;
       }
     `;
@@ -66,7 +54,7 @@
     if (!window.botpress || window.__orbitaBotpressInitialized) return;
     window.__orbitaBotpressInitialized = true;
 
-    const avatarUrl = `${window.location.origin}/assets/logo-active.png`;
+    const avatarUrl = `${window.location.origin}/assets/orbita-symbol-white.svg`;
 
     window.botpress.on("webchat:ready", () => {
       // No abrimos automaticamente el chat.
@@ -80,12 +68,12 @@
       configuration: {
         botName: "Astra",
         avatarUrl,
-        themeMode: "light",
-        color: "#3276EA",
+        themeMode: "dark",
+        color: "#111827",
         variant: "solid",
         headerVariant: "glass",
         fontFamily: "inter",
-        radius: 4,
+        radius: 8,
         soundEnabled: false,
         feedbackEnabled: false,
         proactiveMessageEnabled: false,
