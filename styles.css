@@ -1301,6 +1301,209 @@ body {
   gap: 0.34rem;
 }
 
+.pricing-hero {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pricing-hero-grid {
+  display: grid;
+  grid-template-columns: 1.06fr 0.94fr;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.pricing-hero-grid h1 {
+  margin: 0.5rem 0 0;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+  max-width: 14ch;
+}
+
+.pricing-bullets {
+  margin-top: 1rem;
+}
+
+.pricing-note {
+  margin-top: 0.8rem;
+  color: #aab4c4;
+  font-size: 0.92rem;
+}
+
+.pricing-visual {
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 2px);
+  padding: 1rem;
+  background: linear-gradient(168deg, rgba(15, 20, 30, 0.95), rgba(10, 13, 20, 0.95));
+}
+
+.pricing-visual img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: block;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.pricing-card {
+  border: 1px solid #e3e7ef;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 16px 34px -30px rgba(12, 16, 25, 0.28);
+  padding: 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.pricing-card h3 {
+  margin: 0;
+  font-size: 1.52rem;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.pricing-card p {
+  margin: 0;
+  color: #4f5b6e;
+}
+
+.pricing-card span {
+  margin-top: 0.3rem;
+  color: #61748d;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pricing-sector {
+  margin: 0;
+  color: #3f5470;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-weight: 800;
+  font-size: 0.73rem;
+}
+
+.pricing-card-accent {
+  border-color: #c4d3ea;
+  background: linear-gradient(160deg, #f6f9ff 0%, #ffffff 100%);
+}
+
+.benchmark-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.benchmark-table th,
+.benchmark-table td {
+  padding: 0.88rem 0.92rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  vertical-align: top;
+}
+
+.benchmark-table th {
+  color: #d9e3f2;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.benchmark-table td {
+  color: #c5cfdd;
+  font-size: 0.95rem;
+}
+
+.benchmark-footnote {
+  margin: 0.8rem 0 0;
+  color: #9eabbe;
+  font-size: 0.87rem;
+}
+
+.benchmark-sources {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.benchmark-sources a {
+  color: #dbe7ff;
+  text-decoration: none;
+  font-size: 0.86rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.36rem 0.7rem;
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.benchmark-sources a:hover,
+.benchmark-sources a:focus-visible {
+  border-color: rgba(255, 255, 255, 0.52);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.included-grid article {
+  border: 1px solid #dde4ef;
+  border-radius: 16px;
+  background: #fff;
+  padding: 1rem;
+}
+
+.included-grid h3 {
+  margin: 0;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+}
+
+.included-grid p {
+  margin: 0.55rem 0 0;
+  color: #4e5a6d;
+}
+
+.pricing-cta {
+  border: 1px solid #dfe6f2;
+  border-radius: 18px;
+  background: #fff;
+  padding: 1.3rem;
+  box-shadow: 0 22px 34px -32px rgba(16, 22, 34, 0.34);
+  display: grid;
+  gap: 0.55rem;
+}
+
+.pricing-cta h2 {
+  margin: 0;
+  color: #0f1626;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  letter-spacing: -0.03em;
+}
+
+.pricing-cta p {
+  margin: 0;
+  color: #516177;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -1340,6 +1543,18 @@ body {
 
   .feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pricing-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .included-grid {
+    grid-template-columns: 1fr;
   }
 
   .experience-layout {
@@ -1419,6 +1634,10 @@ body {
 
   .feature-grid,
   .sector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
     grid-template-columns: 1fr;
   }
 
