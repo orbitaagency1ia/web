@@ -66,7 +66,7 @@
     if (!window.botpress || window.__orbitaBotpressInitialized) return;
     window.__orbitaBotpressInitialized = true;
 
-    const avatarUrl = `${window.location.origin}/assets/img/logo-orbita.svg`;
+    const avatarUrl = `${window.location.origin}/assets/logo-active.png`;
 
     window.botpress.on("webchat:ready", () => {
       // No abrimos automaticamente el chat.
