@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+
+# Local workspace and generated research/scraping artifacts
+_work/
+.cache/
+.pycache/
+
+# Dependencies / temp
+node_modules/
+out/
