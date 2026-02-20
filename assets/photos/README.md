@@ -1,16 +1,15 @@
 # Fotos para la web de Órbita
 
-Coloca tus imágenes aquí con estos nombres exactos:
+Ahora mismo he dejado ya imágenes cargadas en SVG para que se vea bien sin tocar nada:
 
-- `assets/photos/hero/orbita-operations.jpg`
-- `assets/photos/services/asistente-ia.jpg`
-- `assets/photos/services/automatizacion-interna.jpg`
-- `assets/photos/services/avatares-ia.jpg`
+- `assets/photos/hero/orbita-operations.svg`
+- `assets/photos/services/asistente-ia.svg`
+- `assets/photos/services/automatizacion-interna.svg`
+- `assets/photos/services/avatares-ia.svg`
 
-Recomendación técnica:
-- Formato: JPG o WEBP
-- Ancho recomendado: 1800px
-- Peso máximo por imagen: 350 KB
-- Estilo: real, editorial, minimal, tonos fríos
+Si quieres reemplazarlas por fotos reales:
+1. Sube tu foto con el mismo nombre y extensión `.svg` **o** cambia el `src` en `index.html`.
+2. Formato recomendado si usas foto: `jpg` o `webp`, 1600-2000px de ancho.
+3. Peso recomendado: < 350 KB por imagen.
 
-Si falta una imagen, la web usa un fallback visual automático.
+Las rutas están en la sección `#galeria` dentro de `index.html`.
