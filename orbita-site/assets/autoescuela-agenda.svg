@@ -1,0 +1,56 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="96" y1="40" x2="880" y2="616" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1A3C" />
+      <stop offset="1" stop-color="#060E21" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="250" y1="220" x2="770" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4FD0FF" />
+      <stop offset="1" stop-color="#8D92FF" />
+    </linearGradient>
+  </defs>
+
+  <rect x="12" y="12" width="936" height="616" rx="34" fill="url(#bg2)" stroke="#2E497E" stroke-width="2" />
+  <rect x="64" y="74" width="832" height="490" rx="24" fill="#0D1E41" stroke="#3A5A94" />
+
+  <rect x="96" y="110" width="330" height="420" rx="18" fill="#102751" />
+  <text x="124" y="152" fill="#DCEBFF" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Agenda de prácticas</text>
+  <rect x="124" y="174" width="272" height="2" fill="#36558C" />
+
+  <rect x="122" y="200" width="278" height="68" rx="14" fill="#1C3463" />
+  <text x="140" y="230" fill="#DDEEFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600">Lunes · 18:00</text>
+  <text x="140" y="252" fill="#97B6E9" font-family="Inter, Arial, sans-serif" font-size="13">Alumno: Marta S. · Práctica urbana</text>
+
+  <rect x="122" y="280" width="278" height="68" rx="14" fill="#1C3463" />
+  <text x="140" y="310" fill="#DDEEFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600">Martes · 19:30</text>
+  <text x="140" y="332" fill="#97B6E9" font-family="Inter, Arial, sans-serif" font-size="13">Alumno: Alex R. · Refuerzo maniobras</text>
+
+  <rect x="122" y="360" width="278" height="68" rx="14" fill="url(#accent2)" />
+  <text x="140" y="390" fill="#03152F" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">Miércoles · 17:00</text>
+  <text x="140" y="412" fill="#0C2F55" font-family="Inter, Arial, sans-serif" font-size="13">Nuevo alumno confirmado por WhatsApp</text>
+
+  <g transform="translate(458 108)">
+    <rect width="400" height="426" rx="20" fill="#0F234A" stroke="#405F98" />
+    <text x="24" y="44" fill="#E6F3FF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Panel comercial</text>
+    <rect x="24" y="62" width="352" height="2" fill="#365586" />
+
+    <rect x="24" y="90" width="110" height="80" rx="14" fill="#1A3568" />
+    <text x="40" y="122" fill="#D9ECFF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">18</text>
+    <text x="40" y="145" fill="#9BBAEB" font-family="Inter, Arial, sans-serif" font-size="12">Consultas hoy</text>
+
+    <rect x="146" y="90" width="110" height="80" rx="14" fill="#1A3568" />
+    <text x="162" y="122" fill="#D9ECFF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">7</text>
+    <text x="162" y="145" fill="#9BBAEB" font-family="Inter, Arial, sans-serif" font-size="12">Citas agendadas</text>
+
+    <rect x="268" y="90" width="108" height="80" rx="14" fill="#1A3568" />
+    <text x="284" y="122" fill="#D9ECFF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">4</text>
+    <text x="284" y="145" fill="#9BBAEB" font-family="Inter, Arial, sans-serif" font-size="12">Matrículas</text>
+
+    <rect x="24" y="192" width="352" height="206" rx="16" fill="#132D5B" />
+    <polyline points="46,344 112,298 164,320 218,248 274,272 334,226" stroke="#78DBFF" stroke-width="4" fill="none" />
+    <circle cx="112" cy="298" r="6" fill="#78DBFF" />
+    <circle cx="218" cy="248" r="6" fill="#78DBFF" />
+    <circle cx="334" cy="226" r="6" fill="#78DBFF" />
+    <text x="42" y="224" fill="#D3E7FF" font-family="Inter, Arial, sans-serif" font-size="14">Conversión semanal</text>
+  </g>
+</svg>

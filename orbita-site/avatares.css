@@ -1,0 +1,235 @@
+.avatar-hero .hero-copy h1 {
+  max-width: 11ch;
+}
+
+.avatar-stage {
+  overflow: hidden;
+}
+
+.avatar-monitor {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border: 1px solid rgba(189, 198, 212, 0.32);
+  border-radius: 16px;
+  background: rgba(10, 14, 22, 0.84);
+  backdrop-filter: blur(8px);
+  padding: 0.92rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.monitor-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid rgba(186, 196, 212, 0.3);
+  border-radius: 12px;
+  padding: 0.5rem 0.65rem;
+  background: rgba(18, 25, 40, 0.66);
+  color: #ccd4e0;
+  font-size: 0.85rem;
+}
+
+.monitor-row strong {
+  color: #eef2f6;
+  letter-spacing: 0.01em;
+}
+
+.table-wrap {
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  overflow: auto;
+  background: linear-gradient(160deg, rgba(12, 17, 28, 0.95), rgba(8, 12, 20, 0.98));
+  box-shadow: 0 24px 52px -42px rgba(10, 16, 26, 0.54);
+}
+
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.plan-table th,
+.plan-table td {
+  border: 1px solid rgba(174, 186, 206, 0.28);
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.plan-table th {
+  background: rgba(18, 24, 36, 0.9);
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.plan-table td:first-child,
+.plan-table th:first-child {
+  width: 170px;
+  color: #ced6e2;
+  font-weight: 700;
+}
+
+.plan-table td {
+  color: #dde3ec;
+}
+
+.plan-table td[data-target] {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #f2f5f8;
+}
+
+.billing-toggle {
+  margin-bottom: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(185, 196, 212, 0.34);
+  border-radius: 999px;
+  padding: 0.4rem;
+  background: rgba(12, 18, 30, 0.84);
+}
+
+.billing-btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.48rem 0.8rem;
+  background: transparent;
+  color: #d2d9e4;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.billing-btn.is-active {
+  background: linear-gradient(140deg, #f3f6fa, #ffffff);
+  color: #0d1117;
+}
+
+#billingHint {
+  margin: 0 0 0 0.3rem;
+  color: #a5adbb;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.included-grid {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, rgba(16, 22, 34, 0.84), rgba(10, 15, 26, 0.9));
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 0.96fr 1.04fr;
+  gap: 1rem;
+}
+
+.included-grid p {
+  margin-top: 0.55rem;
+  color: var(--muted);
+}
+
+.included-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.48rem;
+}
+
+.included-grid li {
+  color: #c6ceda;
+  padding-left: 0.95rem;
+  position: relative;
+}
+
+.included-grid li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56em;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: linear-gradient(150deg, #dce2ea, #ffffff);
+}
+
+.mode-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.mode-btn {
+  border: 1px solid rgba(185, 197, 214, 0.34);
+  border-radius: 999px;
+  background: rgba(16, 23, 37, 0.76);
+  color: #d7dde7;
+  font: inherit;
+  font-size: 0.87rem;
+  font-weight: 700;
+  padding: 0.55rem 0.88rem;
+  cursor: pointer;
+}
+
+.mode-btn.is-active {
+  border-color: transparent;
+  background: linear-gradient(140deg, #f3f6fa, #ffffff);
+  color: #0d1117;
+}
+
+.mode-bullets {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.mode-bullets li {
+  color: #bec6d2;
+  padding-left: 0.95rem;
+  position: relative;
+}
+
+.mode-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56em;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: linear-gradient(150deg, #dce2ea, #ffffff);
+}
+
+@media (max-width: 1080px) {
+  .included-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .plan-table {
+    min-width: 680px;
+  }
+
+  .plan-table th {
+    font-size: 1rem;
+  }
+
+  .plan-table td[data-target] {
+    font-size: 1.3rem;
+  }
+
+  #billingHint {
+    width: 100%;
+    margin-left: 0;
+  }
+}

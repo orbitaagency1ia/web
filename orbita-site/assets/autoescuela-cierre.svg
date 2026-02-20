@@ -1,0 +1,58 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="90" y1="20" x2="900" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1D43" />
+      <stop offset="1" stop-color="#050D1F" />
+    </linearGradient>
+    <linearGradient id="ok" x1="150" y1="350" x2="520" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57D0FF" />
+      <stop offset="1" stop-color="#89F0FF" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="936" height="616" rx="34" fill="url(#bg3)" stroke="#2E497E" stroke-width="2" />
+
+  <g opacity="0.16">
+    <circle cx="145" cy="82" r="6" fill="#9DE9FF" />
+    <circle cx="790" cy="118" r="5" fill="#9DE9FF" />
+    <circle cx="862" cy="532" r="7" fill="#9DE9FF" />
+  </g>
+
+  <rect x="74" y="90" width="812" height="468" rx="24" fill="#0E2149" stroke="#3B5B94" />
+  <text x="110" y="136" fill="#E0EFFF" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Seguimiento hasta matrícula</text>
+  <rect x="110" y="154" width="742" height="2" fill="#345482" />
+
+  <rect x="112" y="190" width="420" height="332" rx="18" fill="#102A5A" />
+  <text x="140" y="230" fill="#D8E9FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Timeline de lead</text>
+
+  <rect x="140" y="254" width="364" height="62" rx="14" fill="#193769" />
+  <circle cx="172" cy="286" r="8" fill="#6BD8FF" />
+  <text x="192" y="283" fill="#D8EBFF" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">Consulta por WhatsApp</text>
+  <text x="192" y="302" fill="#9ABAEA" font-family="Inter, Arial, sans-serif" font-size="12">Carnet B · Horario tarde</text>
+
+  <rect x="140" y="326" width="364" height="62" rx="14" fill="#1B3E73" />
+  <circle cx="172" cy="358" r="8" fill="#6BD8FF" />
+  <text x="192" y="355" fill="#D8EBFF" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">Respuesta y cualificación</text>
+  <text x="192" y="374" fill="#9ABAEA" font-family="Inter, Arial, sans-serif" font-size="12">Interés alto · inicio inmediato</text>
+
+  <rect x="140" y="398" width="364" height="96" rx="16" fill="url(#ok)" />
+  <circle cx="172" cy="430" r="8" fill="#08325D" />
+  <text x="192" y="428" fill="#052442" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Cita cerrada + matrícula</text>
+  <text x="192" y="448" fill="#144776" font-family="Inter, Arial, sans-serif" font-size="12">Seguimiento automático hasta confirmación</text>
+  <path d="M164 458L174 469L196 446" stroke="#08325D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <g transform="translate(560 190)">
+    <rect width="292" height="332" rx="18" fill="#112B59" />
+    <text x="24" y="40" fill="#DCECFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Estado comercial</text>
+
+    <rect x="24" y="64" width="244" height="86" rx="14" fill="#1D3D73" />
+    <text x="44" y="98" fill="#DDEFFF" font-family="Inter, Arial, sans-serif" font-size="14">Mensajes sin responder</text>
+    <text x="44" y="130" fill="#87CEFF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">0</text>
+
+    <rect x="24" y="162" width="244" height="86" rx="14" fill="#1D3D73" />
+    <text x="44" y="196" fill="#DDEFFF" font-family="Inter, Arial, sans-serif" font-size="14">Seguimientos activos</text>
+    <text x="44" y="228" fill="#87CEFF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">12</text>
+
+    <rect x="24" y="260" width="244" height="48" rx="12" fill="#5BD3FF" />
+    <text x="44" y="290" fill="#062847" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Sistema estable y en órbita</text>
+  </g>
+</svg>

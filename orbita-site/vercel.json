@@ -1,0 +1,75 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/autoescuelas",
+      "destination": "/autoescuelas.html"
+    },
+    {
+      "source": "/avatares",
+      "destination": "/avatares.html"
+    },
+    {
+      "source": "/hoteles",
+      "destination": "/hoteles.html"
+    },
+    {
+      "source": "/restaurantes",
+      "destination": "/restaurantes.html"
+    },
+    {
+      "source": "/clinicas-dentales",
+      "destination": "/clinicas-dentales.html"
+    },
+    {
+      "source": "/centros-esteticos",
+      "destination": "/centros-esteticos.html"
+    },
+    {
+      "source": "/inmobiliarias",
+      "destination": "/inmobiliarias.html"
+    },
+    {
+      "source": "/concesionarios",
+      "destination": "/concesionarios.html"
+    },
+    {
+      "source": "/talleres",
+      "destination": "/talleres.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

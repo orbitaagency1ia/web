@@ -1,0 +1,4 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Órbita mark">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M63 472L184 122C201 74 224 44 256 44C288 44 311 74 328 122L449 472H373L286 161C280 139 269 126 256 126C243 126 232 139 226 161L139 472H63ZM165 472L231 229C236 210 245 197 256 197C267 197 276 210 281 229L347 472H297L267 306C264 292 260 286 256 286C252 286 248 292 245 306L215 472H165Z" fill="#E9E9EB"/>
+  <circle cx="256" cy="244" r="33" fill="#E9E9EB"/>
+</svg>

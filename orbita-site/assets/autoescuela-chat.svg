@@ -1,0 +1,55 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="20" x2="860" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1F45" />
+      <stop offset="1" stop-color="#071127" />
+    </linearGradient>
+    <linearGradient id="chip" x1="100" y1="120" x2="700" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#53D0FF" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#7B8CFF" stop-opacity="0.92" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="936" height="616" rx="34" fill="url(#bg)" stroke="#2C467D" stroke-width="2" />
+  <g opacity="0.18">
+    <circle cx="150" cy="120" r="6" fill="#8EE8FF" />
+    <circle cx="220" cy="95" r="4" fill="#8EE8FF" />
+    <circle cx="770" cy="108" r="7" fill="#8EE8FF" />
+    <circle cx="840" cy="560" r="5" fill="#8EE8FF" />
+  </g>
+
+  <rect x="78" y="84" width="432" height="474" rx="42" fill="#0B1732" stroke="#3E5E97" stroke-width="2" />
+  <rect x="220" y="104" width="145" height="8" rx="4" fill="#96AEDD" opacity="0.66" />
+  <rect x="100" y="146" width="388" height="56" rx="16" fill="#12244B" />
+  <circle cx="130" cy="174" r="12" fill="#52D6FF" />
+  <rect x="154" y="165" width="214" height="12" rx="6" fill="#C2D7FF" />
+  <rect x="154" y="183" width="108" height="8" rx="4" fill="#80A5E6" />
+
+  <rect x="116" y="228" width="238" height="72" rx="18" fill="#1F3462" />
+  <rect x="128" y="248" width="186" height="10" rx="5" fill="#D0E3FF" />
+  <rect x="128" y="265" width="118" height="8" rx="4" fill="#92B3EA" />
+
+  <rect x="232" y="314" width="238" height="86" rx="18" fill="url(#chip)" />
+  <rect x="248" y="338" width="180" height="12" rx="6" fill="#061935" />
+  <rect x="248" y="358" width="126" height="8" rx="4" fill="#1E3A6C" />
+
+  <rect x="116" y="420" width="252" height="74" rx="18" fill="#223A6A" />
+  <rect x="130" y="442" width="210" height="11" rx="5.5" fill="#D3E8FF" />
+  <rect x="130" y="460" width="124" height="8" rx="4" fill="#8CAEE8" />
+
+  <g transform="translate(558 124)">
+    <rect width="324" height="404" rx="24" fill="#0D1D40" stroke="#38558F" />
+    <text x="26" y="54" fill="#E3F4FF" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Lead entrante</text>
+    <rect x="24" y="84" width="276" height="2" fill="#2E4572" />
+
+    <rect x="26" y="118" width="272" height="78" rx="14" fill="#112854" />
+    <text x="42" y="148" fill="#D8EAFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600">Canal: WhatsApp</text>
+    <text x="42" y="174" fill="#97B8ED" font-family="Inter, Arial, sans-serif" font-size="14">Consulta: Precio carnet B</text>
+
+    <rect x="26" y="214" width="272" height="78" rx="14" fill="#12305F" />
+    <text x="42" y="244" fill="#D8EAFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600">Estado: Calificado</text>
+    <text x="42" y="270" fill="#97B8ED" font-family="Inter, Arial, sans-serif" font-size="14">Interés alto, disponibilidad inmediata</text>
+
+    <rect x="26" y="310" width="272" height="72" rx="16" fill="url(#chip)" />
+    <text x="42" y="353" fill="#031430" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="800">Siguiente paso: Agendar llamada</text>
+  </g>
+</svg>

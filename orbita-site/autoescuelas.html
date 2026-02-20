@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Órbita para Autoescuelas | Tu autoescuela, automatizada</title>
+    <meta
+      name="description"
+      content="Asistentes IA para autoescuelas: responde matrículas, prácticas y dudas de examen en WhatsApp, Instagram y Web. Más agenda, menos interrupciones."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://orbitaagency.com/autoescuelas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Órbita Agency" />
+    <meta property="og:title" content="Órbita para Autoescuelas | Tu autoescuela, automatizada" />
+    <meta
+      property="og:description"
+      content="Automatiza atención y captación de alumnos en WhatsApp, Instagram y Web con el tono de tu autoescuela."
+    />
+    <meta property="og:url" content="https://orbitaagency.com/autoescuelas" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Órbita para Autoescuelas" />
+    <meta
+      property="twitter:description"
+      content="Respuestas instantáneas, agenda fluida y menos carga operativa para tu equipo."
+    />
+    <meta name="theme-color" content="#060914" />
+    <link rel="icon" type="image/svg+xml" href="./assets/orbita-favicon.svg" />
+    <link rel="apple-touch-icon" href="./assets/orbita-favicon.svg" />
+    <meta property="og:image" content="https://orbitaagency.com/assets/orbita-favicon.svg" />
+    <meta name="twitter:image" content="https://orbitaagency.com/assets/orbita-favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+    <link rel="stylesheet" href="./autoescuelas.css" />
+    <script>
+      window.ORBITA_LEAD_CONFIG = {
+        spreadsheetId: "1y8YOQaBlJkbnomZSTL2Ioi8Vo3pytLw63MivpFOiF9Y",
+        webhookUrl: "",
+        formsubmitEmail: "contacto@orbitaagency.com",
+        formsubmitEnabled: true
+      };
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Órbita para Autoescuelas",
+            "url": "https://orbitaagency.com/autoescuelas",
+            "description": "Landing sectorial para automatización de atención y conversión en autoescuelas."
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Asistente IA para autoescuelas",
+            "provider": {
+              "@type": "Organization",
+              "name": "Órbita Agency",
+              "url": "https://orbitaagency.com/"
+            },
+            "areaServed": "ES"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Puede responder dudas de teórico y práctico?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Configuramos respuestas para horarios, precios, tipos de matrícula, documentación y proceso de clases."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Puede filtrar alumnos interesados?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Califica intención y urgencia para que el equipo priorice contactos con mayor probabilidad de matrícula."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo mantenéis nuestro tono comercial?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Entrenamos el asistente con tu argumentario y reglas de atención para responder con coherencia."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿En qué canales funciona?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funciona en WhatsApp, Instagram y Web, con voz opcional para llamadas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué pasa con casos complejos?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Los casos complejos se derivan al equipo con contexto para que la respuesta sea más rápida."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="nebula" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <nav class="nav shell">
+        <a class="brand" href="./index.html" aria-label="Volver a la home">
+          <img src="./assets/orbita-symbol-white.svg" alt="Órbita Agency" class="brand-logo" />
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navList">
+          Menú
+        </button>
+        <ul id="navList" class="nav-list">
+          <li><a href="./index.html#plataforma">Plataforma</a></li>
+          <li><a href="./avatares.html">Avatares IA</a></li>
+          <li class="nav-dropdown">
+            <details>
+              <summary>Sectores</summary>
+              <div class="dropdown-menu">
+                <a href="./autoescuelas.html">Autoescuelas</a>
+                <a href="./hoteles.html">Hoteles</a>
+                <a href="./restaurantes.html">Restaurantes</a>
+                <a href="./clinicas-dentales.html">Clínicas dentales</a>
+                <a href="./centros-esteticos.html">Centros estéticos</a>
+                <a href="./inmobiliarias.html">Inmobiliarias</a>
+                <a href="./concesionarios.html">Concesionarios</a>
+                <a href="./talleres.html">Talleres</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="#flujo">Flujo</a></li>
+          <li><a href="#agenda" class="btn btn-small" data-cta="nav_principal">Diseñar mi Asistente</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy" data-reveal>
+          <p class="kicker">Sector autoescuelas</p>
+          <h1 id="heroTitle">Tu autoescuela, <span id="wordRotator">automatizada</span>.</h1>
+          <p class="lead" id="heroLead">
+            Si tardas en responder, pierdes matrículas. Órbita responde al instante, filtra interés y mantiene seguimiento hasta cierre.
+          </p>
+          <p class="microclaim">Limpio. Directo. Personalizado.</p>
+          <p class="proof-line" id="heroProof">Empresas que ya están en Órbita.</p>
+          <p class="ab-badge" id="abBadge" aria-live="polite"></p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#agenda" id="heroPrimaryCta" data-cta="hero_principal"
+              >Diseñar mi Asistente</a
+            >
+            <a class="btn btn-ghost" href="#presupuesto" id="heroSecondaryCta" data-cta="hero_secundaria"
+              >Solicitar presupuesto</a
+            >
+          </div>
+          <ul class="benefit-list">
+            <li id="heroBenefit1">Resuelve la mayoría de consultas frecuentes sin espera.</li>
+            <li id="heroBenefit2">Califica interés y deriva oportunidades con contexto.</li>
+            <li id="heroBenefit3">Mantiene seguimiento continuo hasta matrícula.</li>
+          </ul>
+          <div class="hero-tags">
+            <span>WhatsApp</span>
+            <span>Instagram</span>
+            <span>Web</span>
+            <span>Voz opcional</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="phone-shell">
+            <div class="phone-head"></div>
+            <div class="chat-feed" id="chatFeed">
+              <p class="bubble bubble-in">Hola, quiero precio del carnet B.</p>
+              <p class="bubble bubble-out">Te envío opciones y plazas disponibles.</p>
+              <p class="bubble bubble-in">¿Tenéis intensivo este mes?</p>
+              <p class="bubble bubble-out">Sí, con inicio el lunes. ¿Quieres reservar?</p>
+            </div>
+          </div>
+          <div class="orb-ring ring-1"></div>
+          <div class="orb-ring ring-2"></div>
+          <div class="orb-ring ring-3"></div>
+          <div class="beam"></div>
+        </div>
+      </section>
+
+      <section id="control" class="section shell">
+        <div class="impact-strip" data-reveal>
+          <article>
+            <h3>No hace falta más tráfico.</h3>
+            <p>Hace falta no perder los leads que ya te escriben.</p>
+          </article>
+          <article>
+            <h3>Sin respuesta, no hay matrícula.</h3>
+            <p>Cada minuto de espera enfría la decisión.</p>
+          </article>
+          <article>
+            <h3>Tu equipo no es un chatbot.</h3>
+            <p>Que vendan y formen. Lo repetitivo, por sistema.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="beneficios" class="section shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Operación comercial</p>
+          <h2>Atención sin cuello de botella</h2>
+          <p>Automatizamos lo repetitivo para que tú te centres en crecer.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card" data-reveal>
+            <h3>Respuestas instantáneas</h3>
+            <p>Responde consultas de matrícula, precios y disponibilidad en segundos, incluso fuera de horario.</p>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Tu tono. Tu estilo.</h3>
+            <p>Cada mensaje mantiene el mismo estándar comercial de tu autoescuela, con coherencia.</p>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Dónde están tus alumnos</h3>
+            <p>Activa WhatsApp, Instagram y Web con seguimiento continuo para convertir consultas en matrículas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="escenas" class="section shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Escenas reales</p>
+          <h2>Lo que ve tu alumno</h2>
+          <p>Mensajes claros, respuestas rápidas y continuidad hasta cerrar matrícula.</p>
+        </div>
+        <div class="image-grid">
+          <article class="image-card" data-reveal data-tilt>
+            <img src="./assets/autoescuela-chat.svg" alt="Conversación automática en WhatsApp para autoescuela" loading="lazy" />
+            <div class="image-copy">
+              <h3>Consulta inicial</h3>
+              <p>Pregunta por precio. Recibe opciones y siguiente paso en segundos.</p>
+            </div>
+          </article>
+          <article class="image-card" data-reveal data-tilt>
+            <img src="./assets/autoescuela-agenda.svg" alt="Agenda de clases prácticas automatizada" loading="lazy" />
+            <div class="image-copy">
+              <h3>Agenda ordenada</h3>
+              <p>El sistema propone horarios y reduce fricción en la reserva.</p>
+            </div>
+          </article>
+          <article class="image-card" data-reveal data-tilt>
+            <img src="./assets/autoescuela-cierre.svg" alt="Seguimiento hasta matrícula completada" loading="lazy" />
+            <div class="image-copy">
+              <h3>Cierre con seguimiento</h3>
+              <p>Si el lead se enfría, vuelve a conversación sin perseguir manualmente.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="flujo" class="section shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Flujo Órbita</p>
+          <h2>Del chat a matrícula</h2>
+          <p>Un sistema pensado para captar, filtrar y cerrar con continuidad.</p>
+        </div>
+        <ol class="timeline">
+          <li data-reveal>
+            <span class="step">01</span>
+            <div>
+              <h3>Captación ordenada</h3>
+              <p>Recibe cada consulta, identifica interés y evita perder contactos sin respuesta.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="step">02</span>
+            <div>
+              <h3>Respuesta con criterio</h3>
+              <p>Responde con exactitud según tipo de carnet, paquete y disponibilidad real.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="step">03</span>
+            <div>
+              <h3>Seguimiento activo</h3>
+              <p>Mantiene conversación abierta para impulsar reserva, documentación y cierre.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="metric-grid">
+          <article class="metric" data-reveal>
+            <strong data-counter="24">0</strong>
+            <span>Horas de atención continua</span>
+          </article>
+          <article class="metric" data-reveal>
+            <strong data-counter="95">0</strong>
+            <span>Hasta el 95% de consultas frecuentes</span>
+          </article>
+          <article class="metric" data-reveal>
+            <strong data-counter="3">0</strong>
+            <span>Canales conectados en un flujo</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">FAQ</p>
+          <h2>Preguntas clave</h2>
+          <p>Dudas habituales antes de implantar el asistente en una autoescuela.</p>
+        </div>
+        <div class="faq-list">
+          <details data-reveal>
+            <summary>¿Puede responder dudas de teórico y práctico?</summary>
+            <p>Sí. Configuramos respuestas para horarios, precios, matrículas y documentación.</p>
+          </details>
+          <details data-reveal>
+            <summary>¿Puede filtrar alumnos interesados?</summary>
+            <p>Sí. Prioriza contactos según urgencia e intención para facilitar el cierre.</p>
+          </details>
+          <details data-reveal>
+            <summary>¿Cómo mantenéis nuestro tono comercial?</summary>
+            <p>Entrenamos el asistente con tu argumentario y reglas de atención de marca.</p>
+          </details>
+          <details data-reveal>
+            <summary>¿En qué canales funciona?</summary>
+            <p>Funciona en WhatsApp, Instagram y Web, con voz opcional si lo necesitas.</p>
+          </details>
+          <details data-reveal>
+            <summary>¿Qué pasa con casos complejos?</summary>
+            <p>Deriva al equipo con contexto para que la respuesta humana sea más rápida y precisa.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="agenda" class="section shell contact">
+        <div class="contact-copy" data-reveal>
+          <p class="kicker">Agenda</p>
+          <h2>Reserva una sesión</h2>
+          <p>Revisamos tu flujo comercial y definimos el primer sprint de automatización para tu autoescuela.</p>
+          <div
+            class="calendly-inline-widget calendly-box"
+            data-url="https://calendly.com/orbita-agency/30min"
+            aria-label="Calendly Órbita"
+          ></div>
+          <a
+            class="btn btn-ghost"
+            href="https://calendly.com/orbita-agency/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cta="calendly_link"
+            >Abrir Calendly</a
+          >
+        </div>
+
+        <form class="lead-form" id="leadForm" data-reveal>
+          <p class="kicker" id="presupuesto">Presupuesto</p>
+          <h2>Solicitar presupuesto</h2>
+          <input type="hidden" name="sector" value="Autoescuelas" />
+
+          <label for="name">Nombre y apellidos</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="company">Autoescuela</label>
+          <input id="company" name="company" type="text" required />
+
+          <label for="email">Email profesional</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Teléfono / WhatsApp</label>
+          <input id="phone" name="phone" type="tel" required />
+
+          <label for="channel">Canal prioritario</label>
+          <select id="channel" name="channel" required>
+            <option value="">Selecciona una opción</option>
+            <option>WhatsApp</option>
+            <option>Instagram</option>
+            <option>Web</option>
+            <option>Multicanal</option>
+            <option>Voz</option>
+          </select>
+
+          <label for="goal">Objetivo principal</label>
+          <textarea id="goal" name="goal" rows="4" required></textarea>
+
+          <label class="consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            Acepto que Órbita Agency me contacte para evaluar el proyecto.
+          </label>
+
+          <button type="submit" class="btn btn-primary" data-cta="form_submit">Solicitar presupuesto</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section shell">
+        <div class="last-call" data-reveal>
+          <p class="kicker">Última llamada</p>
+          <h2>Tus leads ya te escriben</h2>
+          <p>
+            Si no respondes rápido, no te comparan: te descartan. Órbita entra donde se pierde la matrícula y la devuelve a tu agenda.
+          </p>
+          <div class="last-call-cta">
+            <a class="btn btn-primary" href="#agenda" data-cta="last_call_principal">Diseñar mi Asistente</a>
+            <a class="btn btn-ghost" href="#presupuesto" data-cta="last_call_secundaria">Solicitar presupuesto</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <div class="cta-box" data-reveal>
+          <h2>Entra en Órbita</h2>
+          <p>Cuando trabajas con nosotros, entras en Órbita.</p>
+          <a class="btn btn-primary" href="#agenda" data-cta="final_principal">Diseñar mi Asistente</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <a class="footer-logo-wrap" href="./index.html" aria-label="Órbita Agency">
+        <img src="./assets/orbita-symbol-white.svg" alt="Órbita Agency" class="footer-logo" />
+      </a>
+      <div class="footer-social" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/orbitaagency.ia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.2" cy="6.8" r="1.1"></circle>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/orbita-agency00" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 10v8"></path>
+            <circle cx="7" cy="6.5" r="1.2"></circle>
+            <path d="M12 10v8"></path>
+            <path d="M12 13.5c0-1.9 1.4-3.3 3.3-3.3s3.2 1.4 3.2 3.3V18"></path>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2025. All rights reserved.</p>
+    </footer>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="./chatbot.js" defer></script>
+    <script src="./autoescuelas.js" defer></script>
+  </body>
+</html>
