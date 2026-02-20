@@ -864,6 +864,26 @@ details p {
   font-size: 0.84rem;
 }
 
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.footer-legal a {
+  color: #b8c5d7;
+  text-decoration: none;
+  font-size: 0.84rem;
+  transition: color 180ms ease;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus-visible {
+  color: #ffffff;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
